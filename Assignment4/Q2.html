@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Creation</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        function createDiv(width, height, text) {
+            let newdiv = document.createElement("div");
+            newdiv.style.width = width + "px";
+            newdiv.style.height = height + "px";
+            newdiv.style.border = "2px solid black";
+            newdiv.textContent = text;
+            newdiv.style.margin = "20px";
+
+            let container = document.getElementById("container");
+            if (container) {
+                container.appendChild(newdiv);
+            } else {
+                console.error("Container element not found.");
+            }
+        }
+
+        createDiv(200, 100, "Hello, this is a new div!");
+         createDiv(40,20,"hello");
+    </script>
+</body>
+</html>

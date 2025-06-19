@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show Para</title>
+    <style>
+        #useless-paragraph {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <h1><u>I am a headline made with HTML</u></h1>
+    <br />
+    <p id="useless-paragraph">Useless paragraph.You have a document and that has one paragraph that is
+    important for some of your audience but useless for the rest. You want to ensure that your users
+    get to choose if they want to hide or see the paragraph.
+    </p>
+    <br />
+    <button onclick="toggleVisibility()">Toggle Button</button>
+
+
+    <script>
+        function toggleVisibility() {
+    let para = document.getElementById("useless-paragraph");
+    
+    if (para.style.display === "none") {
+        para.style.display = "block";
+    } else {
+        para.style.display = "none"; // Hide the paragraph
+    }
+}
+
+    </script>
+</body>
+</html>
