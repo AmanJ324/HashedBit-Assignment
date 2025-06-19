@@ -52,6 +52,6 @@ function sumOfProducts(n1, n2) {
 }
 
 console.log("");
-console.log(calculate(10, 5, 'multiply')); // Outputs: 50
-console.log(findTax(1200000)); // Outputs: 240000
-console.log(sumOfProducts(6, 34)); // Outputs: 24
+console.log(calculate(10, 5, 'multiply')); 
+console.log(findTax(1200000)); 
+console.log(sumOfProducts(6, 34)); 

@@ -1,0 +1,78 @@
+.ipl-container {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark text for contrast */
+}
+
+h1 {
+  color: #1a237e; /* Dark blue */
+  text-align: center;
+}
+
+h3 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.points-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.points-table th {
+  background-color: #1a237e; /* Dark blue */
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.points-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.points-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.points-table tr:hover {
+  background-color: #e3f2fd;
+}
+
+.team-name {
+  font-weight: bold;
+  color: #1a237e; /* Dark blue */
+}
+
+.points {
+  font-weight: bold;
+  color: #1a237e; /* Dark blue */
+}
+
+.positive {
+  color: #2e7d32; /* Green for positive NRR */
+  font-weight: bold;
+}
+
+.negative {
+  color: #c62828; /* Red for negative NRR */
+  font-weight: bold;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.error {
+  color: #c62828; /* Red for errors */
+}
